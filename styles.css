@@ -4,6 +4,33 @@
     box-sizing: border-box;
 }
 
+.whatsapp-boton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 32px;
+    transition: transform 0.2s ease-in-out;
+    z-index: 1000; 
+}
+
+.whatsapp-boton img {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-boton:hover {
+    transform: scale(1.1);
+}
+
 html, body {
     height: 100%; /* Asegura que la página tenga altura completa */
     margin: 0;
@@ -226,10 +253,9 @@ h2::after {
 
 .cuadro2 {
     background-color: #fff4ec;
-    padding: 20px;
+    padding: 30px;
     margin: 20px;
-    width: 400px;
-    height: 540px;
+    height: 565px;
     border-radius: 30px;
     display: block;
     list-style: none;
@@ -259,7 +285,7 @@ h2::after {
 }
 
 label {
-    font-size: 18px;
+    font-size: 20px;
     color: #bb977b;
     margin: 7px;
 }
@@ -276,7 +302,7 @@ footer {
     left: 0;
     width: 100%;
     text-align: left;
-    z-index: 1000;
+    z-index: 999;
     margin-top: auto;
 }
 
